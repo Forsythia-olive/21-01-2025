@@ -35,3 +35,14 @@ jobs:
         env:
           VAR: "secret 1"
           VAR2: "Another"
+          
+      # Runs a set of commands to setup python and poetry
+      - name: install poetry
+        run:  poetry install
+        
+      - name: install pachages
+        run:  poetry install
+        
+
+       
+
